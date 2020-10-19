@@ -1,0 +1,4 @@
+/MDK-ARM/RTE/*
+/MDK-ARM/Project.uvguix.*
+/MDK-ARM/Project.uvguix.trocache
+/MDK-ARM/startup_stm32f103xb.lst
