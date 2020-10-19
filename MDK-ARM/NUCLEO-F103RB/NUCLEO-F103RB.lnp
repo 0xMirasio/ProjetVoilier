@@ -1,0 +1,16 @@
+--cpu Cortex-M3
+"nucleo-f103rb\main.o"
+"nucleo-f103rb\chrono.o"
+"nucleo-f103rb\mytimer.o"
+"nucleo-f103rb\accelerometre.o"
+"nucleo-f103rb\girouette.o"
+"nucleo-f103rb\management.o"
+"nucleo-f103rb\stm32f1xx_ll_rcc.o"
+"nucleo-f103rb\stm32f1xx_ll_utils.o"
+"nucleo-f103rb\stm32f1xx_ll_tim.o"
+"nucleo-f103rb\system_stm32f1xx.o"
+"nucleo-f103rb\startup_stm32f103xb.o"
+--library_type=microlib --strict --scatter "NUCLEO-F103RB\NUCLEO-F103RB.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "NUCLEO-F103RB.map" -o NUCLEO-F103RB\NUCLEO-F103RB.axf
