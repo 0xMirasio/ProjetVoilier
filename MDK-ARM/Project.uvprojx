@@ -437,6 +437,16 @@
               <FileType>5</FileType>
               <FilePath>..\MyDrivers\Management.h</FilePath>
             </File>
+            <File>
+              <FileName>plateau.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MyDrivers\plateau.c</FilePath>
+            </File>
+            <File>
+              <FileName>plateau.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\MyDrivers\plateau.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -939,6 +949,16 @@
               <FileName>Management.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\MyDrivers\Management.h</FilePath>
+            </File>
+            <File>
+              <FileName>plateau.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MyDrivers\plateau.c</FilePath>
+            </File>
+            <File>
+              <FileName>plateau.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\MyDrivers\plateau.h</FilePath>
             </File>
           </Files>
         </Group>

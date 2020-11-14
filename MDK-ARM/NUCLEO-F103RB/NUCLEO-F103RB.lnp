@@ -5,6 +5,7 @@
 "nucleo-f103rb\accelerometre.o"
 "nucleo-f103rb\girouette.o"
 "nucleo-f103rb\management.o"
+"nucleo-f103rb\plateau.o"
 "nucleo-f103rb\stm32f1xx_ll_rcc.o"
 "nucleo-f103rb\stm32f1xx_ll_utils.o"
 "nucleo-f103rb\stm32f1xx_ll_tim.o"
