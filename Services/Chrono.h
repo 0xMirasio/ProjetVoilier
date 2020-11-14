@@ -48,6 +48,7 @@ typedef struct {
 	char Hund;
 	char Sec;
 	char Min;
+	char Hour;
 } Time;
 
 
