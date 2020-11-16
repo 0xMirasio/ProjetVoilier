@@ -12,8 +12,6 @@
 "nucleo-f103rb\stm32f1xx_ll_adc.o"
 "nucleo-f103rb\stm32f1xx_ll_gpio.o"
 "nucleo-f103rb\stm32f1xx_ll_usart.o"
-"nucleo-f103rb\stm32f1xx_ll_i2c.o"
-"nucleo-f103rb\stm32f1xx_ll_rtc.o"
 "nucleo-f103rb\system_stm32f1xx.o"
 "nucleo-f103rb\startup_stm32f103xb.o"
 --library_type=microlib --strict --scatter "NUCLEO-F103RB\NUCLEO-F103RB.sct"

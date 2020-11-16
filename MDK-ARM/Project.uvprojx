@@ -438,14 +438,14 @@
               <FilePath>..\MyDrivers\Management.h</FilePath>
             </File>
             <File>
-              <FileName>plateau.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\MyDrivers\plateau.c</FilePath>
-            </File>
-            <File>
               <FileName>plateau.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\MyDrivers\plateau.h</FilePath>
+            </File>
+            <File>
+              <FileName>plateau.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MyDrivers\plateau.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -481,16 +481,6 @@
               <FileName>stm32f1xx_ll_usart.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\LLDrivers\src\stm32f1xx_ll_usart.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f1xx_ll_i2c.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\LLDrivers\src\stm32f1xx_ll_i2c.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f1xx_ll_rtc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\LLDrivers\src\stm32f1xx_ll_rtc.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -951,14 +941,14 @@
               <FilePath>..\MyDrivers\Management.h</FilePath>
             </File>
             <File>
-              <FileName>plateau.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\MyDrivers\plateau.c</FilePath>
-            </File>
-            <File>
               <FileName>plateau.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\MyDrivers\plateau.h</FilePath>
+            </File>
+            <File>
+              <FileName>plateau.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MyDrivers\plateau.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -994,16 +984,6 @@
               <FileName>stm32f1xx_ll_usart.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\LLDrivers\src\stm32f1xx_ll_usart.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f1xx_ll_i2c.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\LLDrivers\src\stm32f1xx_ll_i2c.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f1xx_ll_rtc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\LLDrivers\src\stm32f1xx_ll_rtc.c</FilePath>
             </File>
           </Files>
         </Group>

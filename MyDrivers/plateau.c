@@ -20,7 +20,7 @@ vitesse réglable de 0 à 100% dans les deux sens.*/
 float vitesse;
 int sens;
 
-void timer_RF_init(){
+void timer_RF_init(){ // TIM4
 
 	//init timer
 	LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_TIM4); //PB6 correspond au TIM4_CH1; PB7 correspond au TIM4_CH2; 
@@ -122,7 +122,7 @@ void gpio_mcc_init() {
 }		
 
 	
-void timer_pwm_mcc_init() {
+void timer_pwm_mcc_init() { //TIM2
 	//72 000 000 / 65454*55 = 20ms pour timer
 	int Arr = 65454 ; //max pour 16 bits
 	int Psc = 54 ;

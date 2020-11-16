@@ -16,7 +16,7 @@
 
 
 static Time Chrono_Time; // rem : static rend la visibilité de la variable Chrono_Time limitée à ce fichier 
-static TIM_TypeDef * Chrono_Timer=TIM1; // Timer chrono par défault
+static TIM_TypeDef * Chrono_Timer=TIM3; // Timer chrono par défault
 static int cpt=0;
 static float vitesse = 0;
 static uint16_t voltage;
@@ -28,7 +28,9 @@ void Chrono_Background() {
 		// surveillance VITESSE
 		vitesse = get_vitesse_sens();
 		bougerPlateau();
-	
+		
+		// Mouvement des voiles
+		bougerVoile(getAngle());
 		// SURVEILLANCE BATTERIE
 		voltage = getAlimentationState();
 		if (voltage < seuil) {
@@ -49,7 +51,7 @@ void Chrono_Conf(TIM_TypeDef * Timer)
 	Chrono_Time.Hour=0;
 	
 	
-	MyTimer_Conf(Chrono_Timer,999, 719); // config de TIM1, utilisé pour le chrono/ref date UART
+	MyTimer_Conf(Chrono_Timer,999, 719); // config de TIM3, utilisé pour le chrono/ref date UART
 	MyTimer_IT_Conf(Chrono_Timer, Chrono_Task_10ms,3);
 	MyTimer_IT_Enable(Chrono_Timer);
 	
@@ -58,11 +60,15 @@ void Chrono_Conf(TIM_TypeDef * Timer)
 	
 		//init RF (avec PWM input)
 	gpio_RF_init();
-	timer_RF_init(); // configure TIM4 => utilisé pour le moteur CC/PWN
+	timer_RF_init(); // configure TIM4 => module RF
 	
 	//init mcc + PWM
 	gpio_mcc_init();
-	timer_pwm_mcc_init();
+	timer_pwm_mcc_init(); // configure TIM2 => moteur CC
+	
+	Adc_Conf_ACC(ADC2); // adc2 utilisé pour la recuperation de l'angle
+	timer_pwm_init(); // TIM1 pour le servomoteur
+	gpio_servom_init(); // pin gpio pour le servo
 	
 	
 	
