@@ -20,3 +20,4 @@ nucleo-f103rb\chrono.o: ..\LLDrivers\inc\stm32f1xx_ll_rcc.h
 nucleo-f103rb\chrono.o: ..\LLDrivers\inc\stm32f1xx_ll_rtc.h
 nucleo-f103rb\chrono.o: ..\LLDrivers\inc\stm32f1xx_ll_i2c.h
 nucleo-f103rb\chrono.o: ..\LLDrivers\inc\stm32f1xx_ll_tim.h
+nucleo-f103rb\chrono.o: ..\MyDrivers\plateau.h

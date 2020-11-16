@@ -1,195 +1,196 @@
 Dependencies for Project 'Project', Target 'NUCLEO-F103RB': (DO NOT MODIFY !)
 CompilerVersion: 5060750::V5.06 update 6 (build 750)::ARMCC
-F (../Src/main.c)(0x5FA532F2)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\LLDrivers\inc -I ..\Services -I ..\MyDrivers --C99-I.\RTE\_NUCLEO-F103RB-IC:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\titip\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DSTM32F103xB -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000U" -DUSE_FULL_ASSERT-o nucleo-f103rb\main.o --omf_browse nucleo-f103rb\main.crf --depend nucleo-f103rb\main.d)
-I (..\LLDrivers\inc\stm32f1xx_ll_rcc.h)(0x5FA532F2)
-I (..\Inc\stm32f1xx.h)(0x5FA532F2)
-I (..\Inc\stm32f103xb.h)(0x5FA532F2)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm3.h)(0x5D25F326)
+F (../Src/main.c)(0x5FB17998)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\LLDrivers\inc -I ..\Services -I ..\MyDrivers --C99-I.\RTE\_NUCLEO-F103RB-IC:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\emili\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DSTM32F103xB -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000U" -DUSE_FULL_ASSERT-o nucleo-f103rb\main.o --omf_browse nucleo-f103rb\main.crf --depend nucleo-f103rb\main.d)
+I (..\LLDrivers\inc\stm32f1xx_ll_rcc.h)(0x5FA53BE3)
+I (..\Inc\stm32f1xx.h)(0x5FA53BE3)
+I (..\Inc\stm32f103xb.h)(0x5FA53BE3)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm3.h)(0x5D25E516)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B2678)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D25F326)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D25F326)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D25F326)
-I (..\Inc\system_stm32f1xx.h)(0x5FA532F2)
-I (..\LLDrivers\inc\stm32f1xx_ll_utils.h)(0x5FA532F2)
-I (..\LLDrivers\inc\stm32f1xx_ll_system.h)(0x5FA532F2)
-I (..\Services\Chrono.h)(0x5FA96FA3)
-F (..\Services\Chrono.c)(0x5FA9702F)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\LLDrivers\inc -I ..\Services -I ..\MyDrivers --C99-I.\RTE\_NUCLEO-F103RB-IC:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\titip\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DSTM32F103xB -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000U" -DUSE_FULL_ASSERT-o nucleo-f103rb\chrono.o --omf_browse nucleo-f103rb\chrono.crf --depend nucleo-f103rb\chrono.d)
-I (..\Services\Chrono.h)(0x5FA96FA3)
-I (..\Inc\stm32f103xb.h)(0x5FA532F2)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm3.h)(0x5D25F326)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D25E516)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D25E516)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D25E516)
+I (..\Inc\system_stm32f1xx.h)(0x5FA53BE3)
+I (..\LLDrivers\inc\stm32f1xx_ll_utils.h)(0x5FA53BE3)
+I (..\LLDrivers\inc\stm32f1xx_ll_system.h)(0x5FA53BE3)
+I (..\Services\Chrono.h)(0x5FB159C4)
+I (../Src/plateau.h)(0x5FAED93E)
+F (..\Services\Chrono.c)(0x5FB159C4)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\LLDrivers\inc -I ..\Services -I ..\MyDrivers --C99-I.\RTE\_NUCLEO-F103RB-IC:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\emili\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DSTM32F103xB -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000U" -DUSE_FULL_ASSERT-o nucleo-f103rb\chrono.o --omf_browse nucleo-f103rb\chrono.crf --depend nucleo-f103rb\chrono.d)
+I (..\Services\Chrono.h)(0x5FB159C4)
+I (..\Inc\stm32f103xb.h)(0x5FA53BE3)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm3.h)(0x5D25E516)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B2678)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D25F326)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D25F326)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D25F326)
-I (..\Inc\system_stm32f1xx.h)(0x5FA532F2)
-I (..\MyDrivers\MyTimer.h)(0x5FA532F2)
-I (..\MyDrivers\Girouette.h)(0x5FA532F2)
-I (..\MyDrivers\Accelerometre.h)(0x5FA532F2)
-I (..\MyDrivers\Management.h)(0x5FA96AFE)
-I (..\LLDrivers\inc\stm32f1xx_ll_usart.h)(0x5FA532F2)
-I (..\Inc\stm32f1xx.h)(0x5FA532F2)
-I (..\LLDrivers\inc\stm32f1xx_ll_gpio.h)(0x5FA532F2)
-I (..\LLDrivers\inc\stm32f1xx_ll_bus.h)(0x5FA532F2)
-I (..\LLDrivers\inc\stm32f1xx_ll_adc.h)(0x5FA532F2)
-I (..\LLDrivers\inc\stm32f1xx_ll_rcc.h)(0x5FA532F2)
-I (..\LLDrivers\inc\stm32f1xx_ll_rtc.h)(0x5FA532F2)
-I (..\LLDrivers\inc\stm32f1xx_ll_i2c.h)(0x5FA532F2)
-I (..\LLDrivers\inc\stm32f1xx_ll_tim.h)(0x5FA532F2)
-F (..\MyDrivers\MyTimer.c)(0x5FA532F2)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\LLDrivers\inc -I ..\Services -I ..\MyDrivers --C99-I.\RTE\_NUCLEO-F103RB-IC:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\titip\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DSTM32F103xB -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000U" -DUSE_FULL_ASSERT-o nucleo-f103rb\mytimer.o --omf_browse nucleo-f103rb\mytimer.crf --depend nucleo-f103rb\mytimer.d)
-I (..\MyDrivers\MyTimer.h)(0x5FA532F2)
-I (..\Inc\stm32f103xb.h)(0x5FA532F2)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm3.h)(0x5D25F326)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D25E516)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D25E516)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D25E516)
+I (..\Inc\system_stm32f1xx.h)(0x5FA53BE3)
+I (..\MyDrivers\MyTimer.h)(0x5FA53BE4)
+I (..\MyDrivers\Girouette.h)(0x5FA53BE4)
+I (..\MyDrivers\Accelerometre.h)(0x5FA53BE4)
+I (..\MyDrivers\Management.h)(0x5FB159C4)
+I (..\LLDrivers\inc\stm32f1xx_ll_usart.h)(0x5FA53BE3)
+I (..\Inc\stm32f1xx.h)(0x5FA53BE3)
+I (..\LLDrivers\inc\stm32f1xx_ll_gpio.h)(0x5FA53BE3)
+I (..\LLDrivers\inc\stm32f1xx_ll_bus.h)(0x5FA53BE3)
+I (..\LLDrivers\inc\stm32f1xx_ll_adc.h)(0x5FA53BE3)
+I (..\LLDrivers\inc\stm32f1xx_ll_rcc.h)(0x5FA53BE3)
+I (..\LLDrivers\inc\stm32f1xx_ll_rtc.h)(0x5FA53BE3)
+I (..\LLDrivers\inc\stm32f1xx_ll_i2c.h)(0x5FA53BE3)
+I (..\LLDrivers\inc\stm32f1xx_ll_tim.h)(0x5FA53BE3)
+F (..\MyDrivers\MyTimer.c)(0x5FA53BE4)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\LLDrivers\inc -I ..\Services -I ..\MyDrivers --C99-I.\RTE\_NUCLEO-F103RB-IC:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\emili\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DSTM32F103xB -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000U" -DUSE_FULL_ASSERT-o nucleo-f103rb\mytimer.o --omf_browse nucleo-f103rb\mytimer.crf --depend nucleo-f103rb\mytimer.d)
+I (..\MyDrivers\MyTimer.h)(0x5FA53BE4)
+I (..\Inc\stm32f103xb.h)(0x5FA53BE3)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm3.h)(0x5D25E516)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B2678)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D25F326)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D25F326)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D25F326)
-I (..\Inc\system_stm32f1xx.h)(0x5FA532F2)
-I (..\LLDrivers\inc\stm32f1xx_ll_bus.h)(0x5FA532F2)
-I (..\Inc\stm32f1xx.h)(0x5FA532F2)
-I (..\LLDrivers\inc\stm32f1xx_ll_tim.h)(0x5FA532F2)
-F (..\MyDrivers\Accelerometre.c)(0x5FA532F2)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\LLDrivers\inc -I ..\Services -I ..\MyDrivers --C99-I.\RTE\_NUCLEO-F103RB-IC:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\titip\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DSTM32F103xB -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000U" -DUSE_FULL_ASSERT-o nucleo-f103rb\accelerometre.o --omf_browse nucleo-f103rb\accelerometre.crf --depend nucleo-f103rb\accelerometre.d)
-F (..\MyDrivers\Girouette.c)(0x5FA532F2)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\LLDrivers\inc -I ..\Services -I ..\MyDrivers --C99-I.\RTE\_NUCLEO-F103RB-IC:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\titip\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DSTM32F103xB -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000U" -DUSE_FULL_ASSERT-o nucleo-f103rb\girouette.o --omf_browse nucleo-f103rb\girouette.crf --depend nucleo-f103rb\girouette.d)
-F (..\MyDrivers\Management.c)(0x5FA971BF)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\LLDrivers\inc -I ..\Services -I ..\MyDrivers --C99-I.\RTE\_NUCLEO-F103RB-IC:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\titip\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DSTM32F103xB -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000U" -DUSE_FULL_ASSERT-o nucleo-f103rb\management.o --omf_browse nucleo-f103rb\management.crf --depend nucleo-f103rb\management.d)
-I (..\MyDrivers\Management.h)(0x5FA96AFE)
-I (..\LLDrivers\inc\stm32f1xx_ll_usart.h)(0x5FA532F2)
-I (..\Inc\stm32f1xx.h)(0x5FA532F2)
-I (..\Inc\stm32f103xb.h)(0x5FA532F2)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm3.h)(0x5D25F326)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D25E516)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D25E516)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D25E516)
+I (..\Inc\system_stm32f1xx.h)(0x5FA53BE3)
+I (..\LLDrivers\inc\stm32f1xx_ll_bus.h)(0x5FA53BE3)
+I (..\Inc\stm32f1xx.h)(0x5FA53BE3)
+I (..\LLDrivers\inc\stm32f1xx_ll_tim.h)(0x5FA53BE3)
+F (..\MyDrivers\Accelerometre.c)(0x5FA53BE4)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\LLDrivers\inc -I ..\Services -I ..\MyDrivers --C99-I.\RTE\_NUCLEO-F103RB-IC:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\emili\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DSTM32F103xB -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000U" -DUSE_FULL_ASSERT-o nucleo-f103rb\accelerometre.o --omf_browse nucleo-f103rb\accelerometre.crf --depend nucleo-f103rb\accelerometre.d)
+F (..\MyDrivers\Girouette.c)(0x5FA53BE4)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\LLDrivers\inc -I ..\Services -I ..\MyDrivers --C99-I.\RTE\_NUCLEO-F103RB-IC:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\emili\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DSTM32F103xB -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000U" -DUSE_FULL_ASSERT-o nucleo-f103rb\girouette.o --omf_browse nucleo-f103rb\girouette.crf --depend nucleo-f103rb\girouette.d)
+F (..\MyDrivers\Management.c)(0x5FB159C4)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\LLDrivers\inc -I ..\Services -I ..\MyDrivers --C99-I.\RTE\_NUCLEO-F103RB-IC:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\emili\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DSTM32F103xB -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000U" -DUSE_FULL_ASSERT-o nucleo-f103rb\management.o --omf_browse nucleo-f103rb\management.crf --depend nucleo-f103rb\management.d)
+I (..\MyDrivers\Management.h)(0x5FB159C4)
+I (..\LLDrivers\inc\stm32f1xx_ll_usart.h)(0x5FA53BE3)
+I (..\Inc\stm32f1xx.h)(0x5FA53BE3)
+I (..\Inc\stm32f103xb.h)(0x5FA53BE3)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm3.h)(0x5D25E516)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B2678)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D25F326)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D25F326)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D25F326)
-I (..\Inc\system_stm32f1xx.h)(0x5FA532F2)
-I (..\Services\Chrono.h)(0x5FA96FA3)
-I (..\LLDrivers\inc\stm32f1xx_ll_gpio.h)(0x5FA532F2)
-I (..\LLDrivers\inc\stm32f1xx_ll_bus.h)(0x5FA532F2)
-I (..\LLDrivers\inc\stm32f1xx_ll_adc.h)(0x5FA532F2)
-I (..\LLDrivers\inc\stm32f1xx_ll_rcc.h)(0x5FA532F2)
-I (..\LLDrivers\inc\stm32f1xx_ll_rtc.h)(0x5FA532F2)
-I (..\LLDrivers\inc\stm32f1xx_ll_i2c.h)(0x5FA532F2)
-I (..\LLDrivers\inc\stm32f1xx_ll_tim.h)(0x5FA532F2)
-F (..\MyDrivers\Accelerometre.h)(0x5FA532F2)()
-F (..\MyDrivers\Girouette.h)(0x5FA532F2)()
-F (..\MyDrivers\Management.h)(0x5FA96AFE)()
-F (..\MyDrivers\plateau.c)(0x5FAFDA45)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\LLDrivers\inc -I ..\Services -I ..\MyDrivers --C99-I.\RTE\_NUCLEO-F103RB-IC:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\titip\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DSTM32F103xB -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000U" -DUSE_FULL_ASSERT-o nucleo-f103rb\plateau.o --omf_browse nucleo-f103rb\plateau.crf --depend nucleo-f103rb\plateau.d)
-I (..\LLDrivers\inc\stm32f1xx_ll_gpio.h)(0x5FA532F2)
-I (..\Inc\stm32f1xx.h)(0x5FA532F2)
-I (..\Inc\stm32f103xb.h)(0x5FA532F2)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm3.h)(0x5D25F326)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D25E516)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D25E516)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D25E516)
+I (..\Inc\system_stm32f1xx.h)(0x5FA53BE3)
+I (..\Services\Chrono.h)(0x5FB159C4)
+I (..\LLDrivers\inc\stm32f1xx_ll_gpio.h)(0x5FA53BE3)
+I (..\LLDrivers\inc\stm32f1xx_ll_bus.h)(0x5FA53BE3)
+I (..\LLDrivers\inc\stm32f1xx_ll_adc.h)(0x5FA53BE3)
+I (..\LLDrivers\inc\stm32f1xx_ll_rcc.h)(0x5FA53BE3)
+I (..\LLDrivers\inc\stm32f1xx_ll_rtc.h)(0x5FA53BE3)
+I (..\LLDrivers\inc\stm32f1xx_ll_i2c.h)(0x5FA53BE3)
+I (..\LLDrivers\inc\stm32f1xx_ll_tim.h)(0x5FA53BE3)
+F (..\MyDrivers\Accelerometre.h)(0x5FA53BE4)()
+F (..\MyDrivers\Girouette.h)(0x5FA53BE4)()
+F (..\MyDrivers\Management.h)(0x5FB159C4)()
+F (..\MyDrivers\plateau.c)(0x5FB159C4)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\LLDrivers\inc -I ..\Services -I ..\MyDrivers --C99-I.\RTE\_NUCLEO-F103RB-IC:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\emili\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DSTM32F103xB -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000U" -DUSE_FULL_ASSERT-o nucleo-f103rb\plateau.o --omf_browse nucleo-f103rb\plateau.crf --depend nucleo-f103rb\plateau.d)
+I (..\LLDrivers\inc\stm32f1xx_ll_gpio.h)(0x5FA53BE3)
+I (..\Inc\stm32f1xx.h)(0x5FA53BE3)
+I (..\Inc\stm32f103xb.h)(0x5FA53BE3)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm3.h)(0x5D25E516)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B2678)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D25F326)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D25F326)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D25F326)
-I (..\Inc\system_stm32f1xx.h)(0x5FA532F2)
-I (..\LLDrivers\inc\stm32f1xx_ll_bus.h)(0x5FA532F2)
-I (..\LLDrivers\inc\stm32f1xx_ll_tim.h)(0x5FA532F2)
-I (..\MyDrivers\plateau.h)(0x5FAFDA19)
-F (..\MyDrivers\plateau.h)(0x5FAFDA19)()
-F (..\LLDrivers\src\stm32f1xx_ll_rcc.c)(0x5FA532F2)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\LLDrivers\inc -I ..\Services -I ..\MyDrivers --C99-I.\RTE\_NUCLEO-F103RB-IC:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\titip\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DSTM32F103xB -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000U" -DUSE_FULL_ASSERT-o nucleo-f103rb\stm32f1xx_ll_rcc.o --omf_browse nucleo-f103rb\stm32f1xx_ll_rcc.crf --depend nucleo-f103rb\stm32f1xx_ll_rcc.d)
-I (..\LLDrivers\inc\stm32f1xx_ll_rcc.h)(0x5FA532F2)
-I (..\Inc\stm32f1xx.h)(0x5FA532F2)
-I (..\Inc\stm32f103xb.h)(0x5FA532F2)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm3.h)(0x5D25F326)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D25E516)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D25E516)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D25E516)
+I (..\Inc\system_stm32f1xx.h)(0x5FA53BE3)
+I (..\LLDrivers\inc\stm32f1xx_ll_bus.h)(0x5FA53BE3)
+I (..\LLDrivers\inc\stm32f1xx_ll_tim.h)(0x5FA53BE3)
+I (..\MyDrivers\plateau.h)(0x5FB159C4)
+F (..\MyDrivers\plateau.h)(0x5FB159C4)()
+F (..\LLDrivers\src\stm32f1xx_ll_rcc.c)(0x5FA53BE3)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\LLDrivers\inc -I ..\Services -I ..\MyDrivers --C99-I.\RTE\_NUCLEO-F103RB-IC:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\emili\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DSTM32F103xB -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000U" -DUSE_FULL_ASSERT-o nucleo-f103rb\stm32f1xx_ll_rcc.o --omf_browse nucleo-f103rb\stm32f1xx_ll_rcc.crf --depend nucleo-f103rb\stm32f1xx_ll_rcc.d)
+I (..\LLDrivers\inc\stm32f1xx_ll_rcc.h)(0x5FA53BE3)
+I (..\Inc\stm32f1xx.h)(0x5FA53BE3)
+I (..\Inc\stm32f103xb.h)(0x5FA53BE3)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm3.h)(0x5D25E516)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B2678)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D25F326)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D25F326)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D25F326)
-I (..\Inc\system_stm32f1xx.h)(0x5FA532F2)
-I (..\Inc\stm32_assert.h)(0x5FA532F2)
-F (..\LLDrivers\src\stm32f1xx_ll_utils.c)(0x5FA532F2)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\LLDrivers\inc -I ..\Services -I ..\MyDrivers --C99-I.\RTE\_NUCLEO-F103RB-IC:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\titip\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DSTM32F103xB -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000U" -DUSE_FULL_ASSERT-o nucleo-f103rb\stm32f1xx_ll_utils.o --omf_browse nucleo-f103rb\stm32f1xx_ll_utils.crf --depend nucleo-f103rb\stm32f1xx_ll_utils.d)
-I (..\LLDrivers\inc\stm32f1xx_ll_rcc.h)(0x5FA532F2)
-I (..\Inc\stm32f1xx.h)(0x5FA532F2)
-I (..\Inc\stm32f103xb.h)(0x5FA532F2)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm3.h)(0x5D25F326)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D25E516)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D25E516)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D25E516)
+I (..\Inc\system_stm32f1xx.h)(0x5FA53BE3)
+I (..\Inc\stm32_assert.h)(0x5FA53BE3)
+F (..\LLDrivers\src\stm32f1xx_ll_utils.c)(0x5FA53BE4)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\LLDrivers\inc -I ..\Services -I ..\MyDrivers --C99-I.\RTE\_NUCLEO-F103RB-IC:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\emili\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DSTM32F103xB -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000U" -DUSE_FULL_ASSERT-o nucleo-f103rb\stm32f1xx_ll_utils.o --omf_browse nucleo-f103rb\stm32f1xx_ll_utils.crf --depend nucleo-f103rb\stm32f1xx_ll_utils.d)
+I (..\LLDrivers\inc\stm32f1xx_ll_rcc.h)(0x5FA53BE3)
+I (..\Inc\stm32f1xx.h)(0x5FA53BE3)
+I (..\Inc\stm32f103xb.h)(0x5FA53BE3)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm3.h)(0x5D25E516)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B2678)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D25F326)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D25F326)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D25F326)
-I (..\Inc\system_stm32f1xx.h)(0x5FA532F2)
-I (..\LLDrivers\inc\stm32f1xx_ll_utils.h)(0x5FA532F2)
-I (..\LLDrivers\inc\stm32f1xx_ll_system.h)(0x5FA532F2)
-I (..\Inc\stm32_assert.h)(0x5FA532F2)
-F (..\LLDrivers\src\stm32f1xx_ll_tim.c)(0x5FA532F2)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\LLDrivers\inc -I ..\Services -I ..\MyDrivers --C99-I.\RTE\_NUCLEO-F103RB-IC:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\titip\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DSTM32F103xB -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000U" -DUSE_FULL_ASSERT-o nucleo-f103rb\stm32f1xx_ll_tim.o --omf_browse nucleo-f103rb\stm32f1xx_ll_tim.crf --depend nucleo-f103rb\stm32f1xx_ll_tim.d)
-I (..\LLDrivers\inc\stm32f1xx_ll_tim.h)(0x5FA532F2)
-I (..\Inc\stm32f1xx.h)(0x5FA532F2)
-I (..\Inc\stm32f103xb.h)(0x5FA532F2)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm3.h)(0x5D25F326)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D25E516)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D25E516)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D25E516)
+I (..\Inc\system_stm32f1xx.h)(0x5FA53BE3)
+I (..\LLDrivers\inc\stm32f1xx_ll_utils.h)(0x5FA53BE3)
+I (..\LLDrivers\inc\stm32f1xx_ll_system.h)(0x5FA53BE3)
+I (..\Inc\stm32_assert.h)(0x5FA53BE3)
+F (..\LLDrivers\src\stm32f1xx_ll_tim.c)(0x5FA53BE3)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\LLDrivers\inc -I ..\Services -I ..\MyDrivers --C99-I.\RTE\_NUCLEO-F103RB-IC:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\emili\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DSTM32F103xB -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000U" -DUSE_FULL_ASSERT-o nucleo-f103rb\stm32f1xx_ll_tim.o --omf_browse nucleo-f103rb\stm32f1xx_ll_tim.crf --depend nucleo-f103rb\stm32f1xx_ll_tim.d)
+I (..\LLDrivers\inc\stm32f1xx_ll_tim.h)(0x5FA53BE3)
+I (..\Inc\stm32f1xx.h)(0x5FA53BE3)
+I (..\Inc\stm32f103xb.h)(0x5FA53BE3)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm3.h)(0x5D25E516)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B2678)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D25F326)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D25F326)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D25F326)
-I (..\Inc\system_stm32f1xx.h)(0x5FA532F2)
-I (..\LLDrivers\inc\stm32f1xx_ll_bus.h)(0x5FA532F2)
-I (..\Inc\stm32_assert.h)(0x5FA532F2)
-F (..\LLDrivers\src\stm32f1xx_ll_adc.c)(0x5FA532F2)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\LLDrivers\inc -I ..\Services -I ..\MyDrivers --C99-I.\RTE\_NUCLEO-F103RB-IC:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\titip\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DSTM32F103xB -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000U" -DUSE_FULL_ASSERT-o nucleo-f103rb\stm32f1xx_ll_adc.o --omf_browse nucleo-f103rb\stm32f1xx_ll_adc.crf --depend nucleo-f103rb\stm32f1xx_ll_adc.d)
-I (..\LLDrivers\inc\stm32f1xx_ll_adc.h)(0x5FA532F2)
-I (..\Inc\stm32f1xx.h)(0x5FA532F2)
-I (..\Inc\stm32f103xb.h)(0x5FA532F2)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm3.h)(0x5D25F326)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D25E516)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D25E516)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D25E516)
+I (..\Inc\system_stm32f1xx.h)(0x5FA53BE3)
+I (..\LLDrivers\inc\stm32f1xx_ll_bus.h)(0x5FA53BE3)
+I (..\Inc\stm32_assert.h)(0x5FA53BE3)
+F (..\LLDrivers\src\stm32f1xx_ll_adc.c)(0x5FA53BE3)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\LLDrivers\inc -I ..\Services -I ..\MyDrivers --C99-I.\RTE\_NUCLEO-F103RB-IC:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\emili\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DSTM32F103xB -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000U" -DUSE_FULL_ASSERT-o nucleo-f103rb\stm32f1xx_ll_adc.o --omf_browse nucleo-f103rb\stm32f1xx_ll_adc.crf --depend nucleo-f103rb\stm32f1xx_ll_adc.d)
+I (..\LLDrivers\inc\stm32f1xx_ll_adc.h)(0x5FA53BE3)
+I (..\Inc\stm32f1xx.h)(0x5FA53BE3)
+I (..\Inc\stm32f103xb.h)(0x5FA53BE3)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm3.h)(0x5D25E516)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B2678)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D25F326)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D25F326)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D25F326)
-I (..\Inc\system_stm32f1xx.h)(0x5FA532F2)
-I (..\LLDrivers\inc\stm32f1xx_ll_bus.h)(0x5FA532F2)
-I (..\Inc\stm32_assert.h)(0x5FA532F2)
-F (..\LLDrivers\src\stm32f1xx_ll_gpio.c)(0x5FA532F2)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\LLDrivers\inc -I ..\Services -I ..\MyDrivers --C99-I.\RTE\_NUCLEO-F103RB-IC:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\titip\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DSTM32F103xB -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000U" -DUSE_FULL_ASSERT-o nucleo-f103rb\stm32f1xx_ll_gpio.o --omf_browse nucleo-f103rb\stm32f1xx_ll_gpio.crf --depend nucleo-f103rb\stm32f1xx_ll_gpio.d)
-I (..\LLDrivers\inc\stm32f1xx_ll_gpio.h)(0x5FA532F2)
-I (..\Inc\stm32f1xx.h)(0x5FA532F2)
-I (..\Inc\stm32f103xb.h)(0x5FA532F2)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm3.h)(0x5D25F326)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D25E516)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D25E516)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D25E516)
+I (..\Inc\system_stm32f1xx.h)(0x5FA53BE3)
+I (..\LLDrivers\inc\stm32f1xx_ll_bus.h)(0x5FA53BE3)
+I (..\Inc\stm32_assert.h)(0x5FA53BE3)
+F (..\LLDrivers\src\stm32f1xx_ll_gpio.c)(0x5FA53BE3)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\LLDrivers\inc -I ..\Services -I ..\MyDrivers --C99-I.\RTE\_NUCLEO-F103RB-IC:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\emili\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DSTM32F103xB -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000U" -DUSE_FULL_ASSERT-o nucleo-f103rb\stm32f1xx_ll_gpio.o --omf_browse nucleo-f103rb\stm32f1xx_ll_gpio.crf --depend nucleo-f103rb\stm32f1xx_ll_gpio.d)
+I (..\LLDrivers\inc\stm32f1xx_ll_gpio.h)(0x5FA53BE3)
+I (..\Inc\stm32f1xx.h)(0x5FA53BE3)
+I (..\Inc\stm32f103xb.h)(0x5FA53BE3)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm3.h)(0x5D25E516)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B2678)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D25F326)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D25F326)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D25F326)
-I (..\Inc\system_stm32f1xx.h)(0x5FA532F2)
-I (..\LLDrivers\inc\stm32f1xx_ll_bus.h)(0x5FA532F2)
-I (..\Inc\stm32_assert.h)(0x5FA532F2)
-F (..\LLDrivers\src\stm32f1xx_ll_usart.c)(0x5FA532F2)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\LLDrivers\inc -I ..\Services -I ..\MyDrivers --C99-I.\RTE\_NUCLEO-F103RB-IC:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\titip\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DSTM32F103xB -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000U" -DUSE_FULL_ASSERT-o nucleo-f103rb\stm32f1xx_ll_usart.o --omf_browse nucleo-f103rb\stm32f1xx_ll_usart.crf --depend nucleo-f103rb\stm32f1xx_ll_usart.d)
-I (..\LLDrivers\inc\stm32f1xx_ll_usart.h)(0x5FA532F2)
-I (..\Inc\stm32f1xx.h)(0x5FA532F2)
-I (..\Inc\stm32f103xb.h)(0x5FA532F2)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm3.h)(0x5D25F326)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D25E516)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D25E516)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D25E516)
+I (..\Inc\system_stm32f1xx.h)(0x5FA53BE3)
+I (..\LLDrivers\inc\stm32f1xx_ll_bus.h)(0x5FA53BE3)
+I (..\Inc\stm32_assert.h)(0x5FA53BE3)
+F (..\LLDrivers\src\stm32f1xx_ll_usart.c)(0x5FA53BE3)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\LLDrivers\inc -I ..\Services -I ..\MyDrivers --C99-I.\RTE\_NUCLEO-F103RB-IC:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\emili\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DSTM32F103xB -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000U" -DUSE_FULL_ASSERT-o nucleo-f103rb\stm32f1xx_ll_usart.o --omf_browse nucleo-f103rb\stm32f1xx_ll_usart.crf --depend nucleo-f103rb\stm32f1xx_ll_usart.d)
+I (..\LLDrivers\inc\stm32f1xx_ll_usart.h)(0x5FA53BE3)
+I (..\Inc\stm32f1xx.h)(0x5FA53BE3)
+I (..\Inc\stm32f103xb.h)(0x5FA53BE3)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm3.h)(0x5D25E516)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B2678)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D25F326)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D25F326)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D25F326)
-I (..\Inc\system_stm32f1xx.h)(0x5FA532F2)
-I (..\LLDrivers\inc\stm32f1xx_ll_rcc.h)(0x5FA532F2)
-I (..\LLDrivers\inc\stm32f1xx_ll_bus.h)(0x5FA532F2)
-I (..\Inc\stm32_assert.h)(0x5FA532F2)
-F (..\LLDrivers\src\stm32f1xx_ll_i2c.c)(0x5FA532F2)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\LLDrivers\inc -I ..\Services -I ..\MyDrivers --C99-I.\RTE\_NUCLEO-F103RB-IC:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\titip\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DSTM32F103xB -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000U" -DUSE_FULL_ASSERT-o nucleo-f103rb\stm32f1xx_ll_i2c.o --omf_browse nucleo-f103rb\stm32f1xx_ll_i2c.crf --depend nucleo-f103rb\stm32f1xx_ll_i2c.d)
-I (..\LLDrivers\inc\stm32f1xx_ll_i2c.h)(0x5FA532F2)
-I (..\Inc\stm32f1xx.h)(0x5FA532F2)
-I (..\Inc\stm32f103xb.h)(0x5FA532F2)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm3.h)(0x5D25F326)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D25E516)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D25E516)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D25E516)
+I (..\Inc\system_stm32f1xx.h)(0x5FA53BE3)
+I (..\LLDrivers\inc\stm32f1xx_ll_rcc.h)(0x5FA53BE3)
+I (..\LLDrivers\inc\stm32f1xx_ll_bus.h)(0x5FA53BE3)
+I (..\Inc\stm32_assert.h)(0x5FA53BE3)
+F (..\LLDrivers\src\stm32f1xx_ll_i2c.c)(0x5FA53BE3)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\LLDrivers\inc -I ..\Services -I ..\MyDrivers --C99-I.\RTE\_NUCLEO-F103RB-IC:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\emili\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DSTM32F103xB -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000U" -DUSE_FULL_ASSERT-o nucleo-f103rb\stm32f1xx_ll_i2c.o --omf_browse nucleo-f103rb\stm32f1xx_ll_i2c.crf --depend nucleo-f103rb\stm32f1xx_ll_i2c.d)
+I (..\LLDrivers\inc\stm32f1xx_ll_i2c.h)(0x5FA53BE3)
+I (..\Inc\stm32f1xx.h)(0x5FA53BE3)
+I (..\Inc\stm32f103xb.h)(0x5FA53BE3)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm3.h)(0x5D25E516)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B2678)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D25F326)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D25F326)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D25F326)
-I (..\Inc\system_stm32f1xx.h)(0x5FA532F2)
-I (..\LLDrivers\inc\stm32f1xx_ll_bus.h)(0x5FA532F2)
-I (..\LLDrivers\inc\stm32f1xx_ll_rcc.h)(0x5FA532F2)
-I (..\Inc\stm32_assert.h)(0x5FA532F2)
-F (..\LLDrivers\src\stm32f1xx_ll_rtc.c)(0x5FA532F2)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\LLDrivers\inc -I ..\Services -I ..\MyDrivers --C99-I.\RTE\_NUCLEO-F103RB-IC:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\titip\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DSTM32F103xB -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000U" -DUSE_FULL_ASSERT-o nucleo-f103rb\stm32f1xx_ll_rtc.o --omf_browse nucleo-f103rb\stm32f1xx_ll_rtc.crf --depend nucleo-f103rb\stm32f1xx_ll_rtc.d)
-I (..\LLDrivers\inc\stm32f1xx_ll_rtc.h)(0x5FA532F2)
-I (..\Inc\stm32f1xx.h)(0x5FA532F2)
-I (..\Inc\stm32f103xb.h)(0x5FA532F2)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm3.h)(0x5D25F326)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D25E516)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D25E516)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D25E516)
+I (..\Inc\system_stm32f1xx.h)(0x5FA53BE3)
+I (..\LLDrivers\inc\stm32f1xx_ll_bus.h)(0x5FA53BE3)
+I (..\LLDrivers\inc\stm32f1xx_ll_rcc.h)(0x5FA53BE3)
+I (..\Inc\stm32_assert.h)(0x5FA53BE3)
+F (..\LLDrivers\src\stm32f1xx_ll_rtc.c)(0x5FA53BE3)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\LLDrivers\inc -I ..\Services -I ..\MyDrivers --C99-I.\RTE\_NUCLEO-F103RB-IC:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\emili\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DSTM32F103xB -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000U" -DUSE_FULL_ASSERT-o nucleo-f103rb\stm32f1xx_ll_rtc.o --omf_browse nucleo-f103rb\stm32f1xx_ll_rtc.crf --depend nucleo-f103rb\stm32f1xx_ll_rtc.d)
+I (..\LLDrivers\inc\stm32f1xx_ll_rtc.h)(0x5FA53BE3)
+I (..\Inc\stm32f1xx.h)(0x5FA53BE3)
+I (..\Inc\stm32f103xb.h)(0x5FA53BE3)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm3.h)(0x5D25E516)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B2678)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D25F326)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D25F326)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D25F326)
-I (..\Inc\system_stm32f1xx.h)(0x5FA532F2)
-I (..\LLDrivers\inc\stm32f1xx_ll_cortex.h)(0x5FA532F2)
-I (..\Inc\stm32_assert.h)(0x5FA532F2)
-F (../Src/system_stm32f1xx.c)(0x5FA532F2)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\LLDrivers\inc -I ..\Services -I ..\MyDrivers --C99-I.\RTE\_NUCLEO-F103RB-IC:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\titip\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DSTM32F103xB -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000U" -DUSE_FULL_ASSERT-o nucleo-f103rb\system_stm32f1xx.o --omf_browse nucleo-f103rb\system_stm32f1xx.crf --depend nucleo-f103rb\system_stm32f1xx.d)
-I (..\Inc\stm32f1xx.h)(0x5FA532F2)
-I (..\Inc\stm32f103xb.h)(0x5FA532F2)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm3.h)(0x5D25F326)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D25E516)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D25E516)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D25E516)
+I (..\Inc\system_stm32f1xx.h)(0x5FA53BE3)
+I (..\LLDrivers\inc\stm32f1xx_ll_cortex.h)(0x5FA53BE3)
+I (..\Inc\stm32_assert.h)(0x5FA53BE3)
+F (../Src/system_stm32f1xx.c)(0x5FA53BE4)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Inc -I ..\LLDrivers\inc -I ..\Services -I ..\MyDrivers --C99-I.\RTE\_NUCLEO-F103RB-IC:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\emili\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F10X_MD -DSTM32F103xB -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000U" -DUSE_FULL_ASSERT-o nucleo-f103rb\system_stm32f1xx.o --omf_browse nucleo-f103rb\system_stm32f1xx.crf --depend nucleo-f103rb\system_stm32f1xx.d)
+I (..\Inc\stm32f1xx.h)(0x5FA53BE3)
+I (..\Inc\stm32f103xb.h)(0x5FA53BE3)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm3.h)(0x5D25E516)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5D9B2678)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D25F326)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D25F326)
-I (C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D25F326)
-I (..\Inc\system_stm32f1xx.h)(0x5FA532F2)
-F (startup_stm32f103xb.s)(0x5FA532F2)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_NUCLEO-F103RB-IC:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\titip\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include--pd "__UVISION_VERSION SETA 529" --pd "_RTE_ SETA 1" --pd "STM32F10X_MD SETA 1"--list startup_stm32f103xb.lst --xref -o nucleo-f103rb\startup_stm32f103xb.o --depend nucleo-f103rb\startup_stm32f103xb.d)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D25E516)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D25E516)
+I (C:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D25E516)
+I (..\Inc\system_stm32f1xx.h)(0x5FA53BE3)
+F (startup_stm32f103xb.s)(0x5FA53BE4)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_NUCLEO-F103RB-IC:\Users\emili\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\emili\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include--pd "__UVISION_VERSION SETA 529" --pd "_RTE_ SETA 1" --pd "STM32F10X_MD SETA 1"--list startup_stm32f103xb.lst --xref -o nucleo-f103rb\startup_stm32f103xb.o --depend nucleo-f103rb\startup_stm32f103xb.d)

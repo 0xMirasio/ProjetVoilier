@@ -70,7 +70,7 @@ void timer_RF_init(){
 }
 
 
-void get_vitesse_sens(){
+float get_vitesse_sens(){
 	
 	int pulse = LL_TIM_OC_GetCompareCH2(TIM4) +1; // get compare value(TIMx_CCR2) set for output channel2
 	int period = LL_TIM_OC_GetCompareCH1(TIM4) +1;
@@ -85,6 +85,7 @@ void get_vitesse_sens(){
 	else{
 		sens=0;
 	}
+	return vitesse;
 	
 }
 
@@ -178,5 +179,5 @@ void bougerPlateau() {
 		 vitesse2=((vitesse2-0.2)/0.8)*65454.0 ;//vitesse à convertir en pourcentage //  Arr=65454 //2339162.5
 	}
 	vit2 = (int)(vitesse2) ;
-	LL_TIM_OC_SetCompareCH2(TIM2, vit2);   
+	LL_TIM_OC_SetCompareCH2(TIM2, vit2);   // bouger voilier
 }

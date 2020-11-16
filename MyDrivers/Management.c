@@ -77,7 +77,7 @@ void Adc_Conf(ADC_TypeDef * adc) {
 	LL_GPIO_Init(GPIOB, &gp);
 
 	LL_ADC_StartCalibration(ADC1); // on calibre l'adc
-	while (LL_ADC_IsCalibrationOnGoing(ADC1) == 0) {} // on attend la fin de la calibration
+	//while (LL_ADC_IsCalibrationOnGoing(ADC1) == 0) {} // on attend la fin de la calibration (ps : calibration ne marche pas en simul, logique, decommenter si test en reel)
 	LL_ADC_Enable(adc); // activation usart
 	LL_ADC_REG_SetSequencerRanks(ADC1, LL_ADC_REG_RANK_1, LL_ADC_CHANNEL_8);
 	

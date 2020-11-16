@@ -7,6 +7,7 @@
 #include "stm32f1xx_ll_usart.h"
 #include "stm32f1xx_ll_gpio.h"
 #include "stm32f1xx_ll_rcc.h"
+#include "plateau.h"
 
 #define separator 0x3a // 0x3a = :
 #define retour 0x0D // 0x0D = \n 
@@ -15,14 +16,19 @@
 
 
 static Time Chrono_Time; // rem : static rend la visibilité de la variable Chrono_Time limitée à ce fichier 
-static TIM_TypeDef * Chrono_Timer=TIM1; // init par défaut au cas où l'utilisateur ne lance pas Chrono_Conf avant toute autre fct.
+static TIM_TypeDef * Chrono_Timer=TIM1; // Timer chrono par défault
 static int cpt=0;
+static float vitesse = 0;
 static uint16_t voltage;
 void Chrono_Task_10ms(void);
 void Chrono_Background(void);
 
 void Chrono_Background() {
 
+		// surveillance VITESSE
+		vitesse = get_vitesse_sens();
+		bougerPlateau();
+	
 		// SURVEILLANCE BATTERIE
 		voltage = getAlimentationState();
 		if (voltage < seuil) {
@@ -32,8 +38,7 @@ void Chrono_Background() {
 				usart_sendClearMessage(USART2, voltage, &Chrono_Time);
 		}
 				
-		// SURVEILLANCE DONNEES BATEAU
-		//TODO
+		
 }
 
 void Chrono_Conf(TIM_TypeDef * Timer)
@@ -43,13 +48,25 @@ void Chrono_Conf(TIM_TypeDef * Timer)
 	Chrono_Time.Min=0;
 	Chrono_Time.Hour=0;
 	
-	Chrono_Timer=Timer;
-	MyTimer_Conf(Chrono_Timer,999, 719);
+	
+	MyTimer_Conf(Chrono_Timer,999, 719); // config de TIM1, utilisé pour le chrono/ref date UART
 	MyTimer_IT_Conf(Chrono_Timer, Chrono_Task_10ms,3);
 	MyTimer_IT_Enable(Chrono_Timer);
 	
 	Usart_conf(USART2);
 	Adc_Conf(ADC1);
+	
+		//init RF (avec PWM input)
+	gpio_RF_init();
+	timer_RF_init(); // configure TIM4 => utilisé pour le moteur CC/PWN
+	
+	//init mcc + PWM
+	gpio_mcc_init();
+	timer_pwm_mcc_init();
+	
+	
+	
+	
 	
 }
 
