@@ -9,13 +9,14 @@ nucleo-f103rb\chrono.o: C:\Users\titip\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\C
 nucleo-f103rb\chrono.o: ..\Inc\system_stm32f1xx.h
 nucleo-f103rb\chrono.o: ..\MyDrivers\MyTimer.h
 nucleo-f103rb\chrono.o: ..\MyDrivers\Girouette.h
+nucleo-f103rb\chrono.o: ..\LLDrivers\inc\stm32f1xx_ll_bus.h
+nucleo-f103rb\chrono.o: ..\Inc\stm32f1xx.h
+nucleo-f103rb\chrono.o: ..\LLDrivers\inc\stm32f1xx_ll_tim.h
 nucleo-f103rb\chrono.o: ..\MyDrivers\Accelerometre.h
 nucleo-f103rb\chrono.o: ..\LLDrivers\inc\stm32f1xx_ll_gpio.h
-nucleo-f103rb\chrono.o: ..\Inc\stm32f1xx.h
-nucleo-f103rb\chrono.o: ..\LLDrivers\inc\stm32f1xx_ll_bus.h
-nucleo-f103rb\chrono.o: ..\LLDrivers\inc\stm32f1xx_ll_tim.h
 nucleo-f103rb\chrono.o: ..\LLDrivers\inc\stm32f1xx_ll_adc.h
 nucleo-f103rb\chrono.o: ..\LLDrivers\inc\stm32f1xx_ll_rcc.h
+nucleo-f103rb\chrono.o: ..\MyDrivers\servomoteurs.h
 nucleo-f103rb\chrono.o: ..\MyDrivers\Management.h
 nucleo-f103rb\chrono.o: ..\LLDrivers\inc\stm32f1xx_ll_usart.h
 nucleo-f103rb\chrono.o: ..\LLDrivers\inc\stm32f1xx_ll_rtc.h

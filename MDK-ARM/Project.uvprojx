@@ -447,6 +447,16 @@
               <FileType>1</FileType>
               <FilePath>..\MyDrivers\plateau.c</FilePath>
             </File>
+            <File>
+              <FileName>servomoteurs.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MyDrivers\servomoteurs.c</FilePath>
+            </File>
+            <File>
+              <FileName>servomoteurs.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\MyDrivers\servomoteurs.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -949,6 +959,16 @@
               <FileName>plateau.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\MyDrivers\plateau.c</FilePath>
+            </File>
+            <File>
+              <FileName>servomoteurs.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\MyDrivers\servomoteurs.c</FilePath>
+            </File>
+            <File>
+              <FileName>servomoteurs.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\MyDrivers\servomoteurs.h</FilePath>
             </File>
           </Files>
         </Group>

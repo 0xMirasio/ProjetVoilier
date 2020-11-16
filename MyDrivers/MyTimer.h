@@ -67,4 +67,10 @@ void MyTimer_IT_Enable(TIM_TypeDef * Timer);
   */
 void MyTimer_IT_Disable(TIM_TypeDef * Timer);
 
+//Configuration de Timer Output PWM
+
+//void Timer_PWM_output_conf(TIM_TypeDef *timer, int Arr, int Psc);
+
+void Timer_PWM_high_level_counter(TIM_TypeDef *timer, int CCR);
+
 #endif

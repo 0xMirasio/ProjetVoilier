@@ -11,7 +11,7 @@
 
 
 void Usart_conf(USART_TypeDef * ux);
-uint16_t getAlimentationState();
+uint16_t getAlimentationState(void);
 void Adc_Conf(ADC_TypeDef * adc);
 void send_char(USART_TypeDef * ux, int data);
 void usart_sendClearMessage(USART_TypeDef * ux, uint16_t voltage, Time * Chrono_Time);

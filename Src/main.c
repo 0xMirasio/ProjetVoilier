@@ -42,7 +42,7 @@ int main(void)
 	
 	
   // Configuration chronomètre
-	Chrono_Conf(TIM4);
+	Chrono_Conf(TIM3);
 	
 	// Lancement chronomètre
 	Chrono_Start(); 

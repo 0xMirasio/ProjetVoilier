@@ -2,6 +2,7 @@
 #include "MyTimer.h"
 #include "Girouette.h"
 #include "Accelerometre.h"
+#include "servomoteurs.h"
 #include "Management.h"
 #include "stm32f1xx_ll_tim.h"
 #include "stm32f1xx_ll_usart.h"
@@ -18,6 +19,7 @@
 static Time Chrono_Time; // rem : static rend la visibilité de la variable Chrono_Time limitée à ce fichier 
 static TIM_TypeDef * Chrono_Timer=TIM3; // Timer chrono par défault
 static int cpt=0;
+static float angle=  0;
 static float vitesse = 0;
 static uint16_t voltage;
 void Chrono_Task_10ms(void);
@@ -25,6 +27,11 @@ void Chrono_Background(void);
 
 void Chrono_Background() {
 
+		//surveillance angle
+		
+		angle = girouette_get_angle();
+		servo_setAngle(angle);
+		
 		// surveillance VITESSE
 		vitesse = get_vitesse_sens();
 		bougerPlateau();
@@ -51,7 +58,7 @@ void Chrono_Conf(TIM_TypeDef * Timer)
 	Chrono_Time.Hour=0;
 	
 	
-	MyTimer_Conf(Chrono_Timer,999, 719); // config de TIM3, utilisé pour le chrono/ref date UART
+	MyTimer_Conf(Chrono_Timer,999, 719); // config de TIM3, utilisé pour le chrono/ref date UART + girouette
 	MyTimer_IT_Conf(Chrono_Timer, Chrono_Task_10ms,3);
 	MyTimer_IT_Enable(Chrono_Timer);
 	
@@ -71,7 +78,10 @@ void Chrono_Conf(TIM_TypeDef * Timer)
 	gpio_servom_init(); // pin gpio pour le servo
 	
 	
+	girouetteConf(); // configuration girouette	TIM3
 	
+	//Timer_PWM_output_conf(TIM1, 19999, 71); // conf pwn tim1 (identique que timer_pwn_init)
+	servo_start(TIM1); 
 	
 	
 }
