@@ -1,28 +1,31 @@
 #include "Accelerometre.h"
 #include <math.h> 
 
-#define Sensitivity 480
+#define Sensitivity 480 //car selon le mannuel , l'accéléromètre est au moin 480mv/g
+//pour calculer l'angle en degrée, j'introduis le PI
 #ifndef M_PI
     #define M_PI 3.14159265358979323846
 #endif
 
+//définir variable global de ADC en ADC1 qui est demandé dans le schéma voilier sur l'accéléromètre
 ADC_TypeDef * adc=ADC1;
-//ADC init afin d'obtenir les données d'accélèromètre
+
+//initisaliser ADC1 afin d'obtenir les données d'accélèromètre
 void Adc_Conf_ACC(ADC_TypeDef * adc_arg) {
 	adc=adc_arg;
 	// on va utiliser PB0 car c'est la pin associé au channels 8 de l'adc 1 (Doc : datasheet STM32f103rb page 29)
 	LL_ADC_Disable(adc); // on disable l'adc
 	
-	// pas sur de ça, l'adc doit avoir F<14Mhz, donc Fhorloge/4. A testez si jamais l'adc ne marche 
-	LL_RCC_SetAPB2Prescaler(LL_RCC_APB2_DIV_4);
+	LL_RCC_SetAPB2Prescaler(LL_RCC_APB2_DIV_4);//l'adc doit avoir F<14Mhz, donc Fhorloge/4. 
 
 	LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_ADC1); // activation horloge interne adc1
 	LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_GPIOC); // activaiton horloge gpioB
 
-	LL_ADC_InitTypeDef ADC_InitStruct;
-	LL_ADC_REG_InitTypeDef ADC_REG_InitStruct;
-	LL_ADC_CommonInitTypeDef ADC_CommonInitStruct;
-		
+	LL_ADC_InitTypeDef ADC_InitStruct; //struture pour initialiser ADC
+	LL_ADC_REG_InitTypeDef ADC_REG_InitStruct;//ADC group regular
+	LL_ADC_CommonInitTypeDef ADC_CommonInitStruct;//ADC common parameters and multimode 
+	
+	//configuration requis dans le manuelle	pour obtenir ADC
 	ADC_CommonInitStruct.Multimode = LL_ADC_MULTI_INDEPENDENT;
 	
 	ADC_InitStruct.DataAlignment = LL_ADC_DATA_ALIGN_RIGHT;
@@ -74,7 +77,7 @@ Si le voilier prend un angle de roulis supérieur à 40° (angle entre la vertic
 voiles sont immédiatement relâchées pour que le voilier revienne à une position horizontale.
 */
 float getAngle() {
-	//recuperer le 
+	//recuperer le vol de ADC
 	float vol=-1;
 
 	
@@ -82,7 +85,10 @@ float getAngle() {
 		uint16_t y = 1;
 		LL_ADC_REG_StartConversionSWStart(adc);
 		y = LL_ADC_REG_ReadConversionData12(adc);
-		vol=y/4095.*3300.;
+		vol=y/4095.*3300.; //
+		//normalement on doit calculer angle par acos 
+		//mais en réel , les chiffres donnés par ADC ne sont pas cohérents par rapport au cacul de l'angle par ex: acos(4) ou acos(3) 
+		//donc pour réussir à detecter l'angle , on applique directement le voltage de ADC
 	}
 	return vol;
 	
@@ -98,15 +104,16 @@ void bougerVoile(float angle){
 //utiliser timer1 sur PA8 pour faire pwm
 //mettre PA8 en output car de là sort la pwm initialisée en timer CH1 
 //TIM1 CCR1 
+	//ici le seuil d'angle est vol avec lequel l'angle du roulis est à 40 degrées
 	if (angle > 1738) { 
 
 		int CCR1Max = 6545;  //ARR*0,1 = 2 ms -> 90  angle ->voiles relâchées 
-		LL_TIM_OC_SetCompareCH1(TIM1, CCR1Max);
+		LL_TIM_OC_SetCompareCH1(TIM1, CCR1Max);//modifier le CCR1 d'output pour manipuler servo-moteur
 		
 	}
 	
 }
-//timer initialisation pour le pwm 
+//timer initialisation pour le pwm - la partie servo-moteur
 void timer_pwm_init(){
 	//72000 * 2 = 144000 
 	//TIM1 CCR1 ARR -> 16 bits < 65535
@@ -119,34 +126,34 @@ void timer_pwm_init(){
 	Timer.Autoreload= Arr ;
 	Timer.Prescaler= Psc;
 	Timer.ClockDivision=LL_TIM_CLOCKDIVISION_DIV1;
-	Timer.CounterMode=LL_TIM_COUNTERMODE_UP;
+	Timer.CounterMode=LL_TIM_COUNTERMODE_UP;//pour augmenter le counter
 	Timer.RepetitionCounter=0;
 	
-	LL_TIM_Init(TIM1,&Timer); //TIM1
+	LL_TIM_Init(TIM1,&Timer); //initialiser TIM1 
 	
-	LL_TIM_OC_SetMode (TIM1, LL_TIM_CHANNEL_CH1,LL_TIM_OCMODE_PWM1);
+	LL_TIM_OC_SetMode (TIM1, LL_TIM_CHANNEL_CH1,LL_TIM_OCMODE_PWM1);//configurer le mode de TIM1 en output
 	TIM1->BDTR |= TIM_BDTR_MOE; //uniquement pour TIM 1 et 8
 	
-	TIM1->CCER |= TIM_CCER_CC1E;
+	TIM1->CCER |= TIM_CCER_CC1E;//uniquement pour TIM 1 et 8
 	
 	
-	LL_TIM_EnableCounter(TIM1);
+	LL_TIM_EnableCounter(TIM1);//activer le TIM1
 
 }
 
-//gpio initialisation pour le pwm 
+//gpio initialisation pour le pwm - pour la partie servo-moteur
 void gpio_servom_init() {
 
-	LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_GPIOA);
+	LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_GPIOA);//activer le clock sur le GPIOA de APB2
 
-	LL_GPIO_InitTypeDef pa8;
-	pa8.Pin = LL_GPIO_PIN_8;  //PA8
-	pa8.Mode = LL_GPIO_MODE_ALTERNATE;
-	pa8.Speed = LL_GPIO_MODE_OUTPUT_10MHz;
-	pa8.OutputType = LL_GPIO_OUTPUT_PUSHPULL ;
-	pa8.Pull = LL_GPIO_PULL_UP ;//Vcc
+	LL_GPIO_InitTypeDef pa8;//structure pour initialiser le GPIO PA8
+	pa8.Pin = LL_GPIO_PIN_8;  //configure le PIN8 pour PA8
+	pa8.Mode = LL_GPIO_MODE_ALTERNATE;// configure le mode de PA8 en mode output alternatre
+	pa8.Speed = LL_GPIO_MODE_OUTPUT_10MHz;// configure la fréquence en 10mhz sur le output
+	pa8.OutputType = LL_GPIO_OUTPUT_PUSHPULL ;//on met output en pushpull
+	pa8.Pull = LL_GPIO_PULL_UP ;//on veut donner VCC sur PA8 donc on met en pull-up
 
-	LL_GPIO_Init(GPIOA, &pa8);
+	LL_GPIO_Init(GPIOA, &pa8);//initialiser PA8 sur GPIOA
 }
 
 
