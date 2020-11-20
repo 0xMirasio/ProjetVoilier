@@ -14,12 +14,12 @@
 #define _SERVO_ARR 19999 //5624
 #define _SERVO_PSC 71 //255
 
-#define A_ALPHA_TO_TETHA (2.0/3.0) //Coefficient directeur de la partie linÈaire de la fonction transformant l'allure en angle de voile
-#define B_ALPHA_TO_TETHA (-30.0) //OrdonnÈe a l'origine de cette mÍme fonction
-#define CRR_PWM_90 (19900) //Valeur du registre commandant la largeur de la PWM pour les voiles lachÈes
-#define CRR_PWM_0 (100) //Valeur du registre commandant la largeur de la PWM pour les voiles bordÈes au maximum
+#define A_ALPHA_TO_TETHA (2.0/3.0) //Coefficient directeur de la partie lin√©aire de la fonction transformant l'allure en angle de voile
+#define B_ALPHA_TO_TETHA (-30.0) //Ordonn√©e a l'origine de cette m√™me fonction
+#define CRR_PWM_90 (19900) //Valeur du registre commandant la largeur de la PWM pour les voiles lach√©es
+#define CRR_PWM_0 (100) //Valeur du registre commandant la largeur de la PWM pour les voiles bord√©es au maximum
 #define A_TETHA_TO_CRR_PWM ((CRR_PWM_90 - CRR_PWM_0)/90.0) //Coefficient directeur de la relation entre l'angle de voile et la PWM
-#define B_TETHA_TO_CRR_PWM (CRR_PWM_0) //OrdonnÈe a l'origine
+#define B_TETHA_TO_CRR_PWM (CRR_PWM_0) //Ordonn√©e a l'origine
 
 
 static TIM_TypeDef *TimerServo;
@@ -58,18 +58,19 @@ void servoConf(void){
 	}
 }
 
-
+/* Fonction r√©cup√©rant l'angle de la girouette et envoyant l'angle √† atteindre pour les servomoteurs */
 void servo_setAngle(int angleGirouette)
 {
-	/* 	angle girouette 0-360∞
-	angle servo : 0-90∞
-	valeur_servo_0∞ = 450
+	/* 	angle girouette 0-360¬∞
+	angle servo : 0-90¬∞
+	valeur_servo_0¬∞ = 450
 	valeur_servo_max = 1200
 	soit un coef lineaire a = 38.98, offset = -2408*/
 
-	int angleGirouetteV1=angleGirouette%360;
+	int angleGirouetteV1=angleGirouette%360; //On place un modulo 360 pour prendre en compte le passage √† z√©ro de la girouette.
 	
 	//min = 450 , max = 1200
-	TimerServo->CCR1 = angleGirouetteV1*38.98 - 2408;
+	TimerServo->CCR1 = angleGirouetteV1*38.98 - 2408; //√©quation de droite affine en fonction de l'angle de la girouette et du rapport cyclique repr√©sent√© 
+	//par CCR1
 }
 
