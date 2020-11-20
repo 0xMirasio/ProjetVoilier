@@ -24,6 +24,7 @@
 
 static TIM_TypeDef *TimerServo;
 
+/*Fonction permettant d'initialiser la configuration des servomoteurs en fonction du timer choisi.*/
 
 void servo_start(TIM_TypeDef *timer)
 {
@@ -31,6 +32,8 @@ void servo_start(TIM_TypeDef *timer)
 	servoConf();
 	servo_setAngle(0);
 }
+
+/*Fonction permettant de configurer les GPIO associé aux différents timers avec les broches respectives*/
 
 void servoConf(void){
 
@@ -59,6 +62,7 @@ void servoConf(void){
 }
 
 /* Fonction récupérant l'angle de la girouette et envoyant l'angle à atteindre pour les servomoteurs */
+
 void servo_setAngle(int angleGirouette)
 {
 	/* 	angle girouette 0-360°
