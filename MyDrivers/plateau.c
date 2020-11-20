@@ -139,7 +139,7 @@ void timer_pwm_mcc_init() { //TIM2
 		
 	LL_TIM_Init(TIM2,&Timer);
 	
-	LL_TIM_OC_SetMode (TIM2, LL_TIM_CHANNEL_CH2,LL_TIM_OCMODE_PWM1);
+	LL_TIM_OC_SetMode(TIM2, LL_TIM_CHANNEL_CH2,LL_TIM_OCMODE_PWM1);
 
 
 	TIM2->CCER |= TIM_CCER_CC2E;
@@ -162,7 +162,8 @@ void bougerPlateau() {
 	
 	float vitesse2;
 	int vit2;
-
+	//sens = -1; // changer to 1/-1 pour debug la rotation du plateau si jamais pb de capteur
+	
 	if (sens) { 	//peut-être dans l'autre sens
 		GPIOA -> ODR &= ~0x00000004 ; //pin2 correspond au ODR3
 	}
@@ -178,6 +179,8 @@ void bougerPlateau() {
 	else {
 		 vitesse2=((vitesse2-0.2)/0.8)*65454.0 ;//vitesse à convertir en pourcentage //  Arr=65454 //2339162.5
 	}
+
 	vit2 = (int)(vitesse2) ;
+	//vit2 = 30000; // changer pour debug la vitesse de la rotation si jamais capteur pb.
 	LL_TIM_OC_SetCompareCH2(TIM2, vit2);   // bouger voilier
 }

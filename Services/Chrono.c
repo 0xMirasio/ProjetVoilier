@@ -29,8 +29,8 @@ void Chrono_Background() {
 
 		//surveillance angle
 		
-		angle = girouette_get_angle();
-		servo_setAngle(angle);
+		angle = girouette_get_angle(); // on recupère l'angle 
+		servo_setAngle(angle); 
 		
 		// surveillance VITESSE
 		vitesse = get_vitesse_sens();
@@ -57,13 +57,8 @@ void Chrono_Conf(TIM_TypeDef * Timer)
 	Chrono_Time.Min=0;
 	Chrono_Time.Hour=0;
 	
-	
-	MyTimer_Conf(Chrono_Timer,999, 719); // config de TIM3, utilisé pour le chrono/ref date UART + girouette
-	MyTimer_IT_Conf(Chrono_Timer, Chrono_Task_10ms,3);
-	MyTimer_IT_Enable(Chrono_Timer);
-	
 	Usart_conf(USART2);
-	Adc_Conf(ADC1);
+	Adc_Conf(ADC2); // on config l'adc2 a utiliser pour l'usart
 	
 		//init RF (avec PWM input)
 	gpio_RF_init();
@@ -73,13 +68,14 @@ void Chrono_Conf(TIM_TypeDef * Timer)
 	gpio_mcc_init();
 	timer_pwm_mcc_init(); // configure TIM2 => moteur CC
 	
-	Adc_Conf_ACC(ADC2); // adc2 utilisé pour la recuperation de l'angle
+	Adc_Conf_ACC(ADC1); // adc1 utilisé pour la recuperation de l'angle
 	timer_pwm_init(); // TIM1 pour le servomoteur
 	gpio_servom_init(); // pin gpio pour le servo
 	
 	
 	girouetteConf(); // configuration girouette	TIM3
-	
+	MyTimer_Start(TIM3);
+	MyTimer_IT_Enable(TIM3);
 	//Timer_PWM_output_conf(TIM1, 19999, 71); // conf pwn tim1 (identique que timer_pwn_init)
 	servo_start(TIM1); 
 	

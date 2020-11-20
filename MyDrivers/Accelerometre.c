@@ -75,16 +75,16 @@ voiles sont immédiatement relâchées pour que le voilier revienne à une posit
 */
 float getAngle() {
 	//recuperer le 
-	float angle=-1.;
+	float vol=-1;
+
 	
 	if (LL_ADC_IsEnabled(adc) == 1) { // si l'adc est activé
 		uint16_t y = 1;
 		LL_ADC_REG_StartConversionSWStart(adc);
 		y = LL_ADC_REG_ReadConversionData12(adc);
-		float vol=y/4095.*3300.;
-		angle=acos(vol/Sensitivity)*180./M_PI; 		
+		vol=y/4095.*3300.;
 	}
-	return angle;
+	return vol;
 	
 }
 
@@ -98,7 +98,7 @@ void bougerVoile(float angle){
 //utiliser timer1 sur PA8 pour faire pwm
 //mettre PA8 en output car de là sort la pwm initialisée en timer CH1 
 //TIM1 CCR1 
-	if (angle > 40) { 
+	if (angle > 1738) { 
 
 		int CCR1Max = 6545;  //ARR*0,1 = 2 ms -> 90  angle ->voiles relâchées 
 		LL_TIM_OC_SetCompareCH1(TIM1, CCR1Max);

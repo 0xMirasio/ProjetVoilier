@@ -33,51 +33,43 @@ void servo_start(TIM_TypeDef *timer)
 }
 
 void servoConf(void){
-	
+
 	//Configuration des GPIO
-	
+
 	LL_GPIO_InitTypeDef My_LL_Gpio_Init_Struct;
-	
+
 	My_LL_Gpio_Init_Struct.Pin = LL_GPIO_PIN_8;
 	My_LL_Gpio_Init_Struct.Mode = LL_GPIO_MODE_ALTERNATE;
 	My_LL_Gpio_Init_Struct.Speed = LL_GPIO_SPEED_FREQ_HIGH;
 	My_LL_Gpio_Init_Struct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
 	My_LL_Gpio_Init_Struct.Pull = LL_GPIO_PULL_DOWN;
-	
+
 		if (TimerServo == TIM1) {
 		/* Enable clock */
 		LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_TIM1); 
-		
+
 		LL_GPIO_Init(GPIOA, &My_LL_Gpio_Init_Struct);
-			
+
 	} else if (TimerServo == TIM4) {//Cf datasheet du STM32
 		/* Enable clock */
 		LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_TIM4); 
-		
+
 		LL_GPIO_Init(GPIOB, &My_LL_Gpio_Init_Struct);
 	}
 }
 
+
 void servo_setAngle(int angleGirouette)
 {
-	/* Servo moteur contained in [0°;60°] */
-	/* CRR = (degree * ARR) / 60  */
-	
-	float angleVoile;
-	int crr;
-	
-	
-	if (angleGirouette < 45 || angleGirouette > 315) {
-		angleVoile = _SERVO_MOTOR_MAX_ANGLE;
-	}
-	
-	else if (angleGirouette > 45 && angleGirouette <= 315) {
-		angleVoile = A_ALPHA_TO_TETHA * (float)abs(angleGirouette) + B_ALPHA_TO_TETHA;
-	}
-	 crr = TimerServo->CCR1;
-	 crr = (int)(A_TETHA_TO_CRR_PWM * angleVoile + B_TETHA_TO_CRR_PWM) ;
-	
-	Timer_PWM_high_level_counter(TimerServo, crr);
-}
+	/* 	angle girouette 0-360°
+	angle servo : 0-90°
+	valeur_servo_0° = 450
+	valeur_servo_max = 1200
+	soit un coef lineaire a = 38.98, offset = -2408*/
 
+	int angleGirouetteV1=angleGirouette%360;
+	
+	//min = 450 , max = 1200
+	TimerServo->CCR1 = angleGirouetteV1*38.98 - 2408;
+}
 

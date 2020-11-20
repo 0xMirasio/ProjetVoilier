@@ -36,12 +36,15 @@ void girouetteConf(){
 	/*Configuration de la première entrée*/
 	
 	//a6 a7
-	LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_GPIOA);
-	LL_GPIO_SetPinMode(GPIOA, LL_GPIO_PIN_6, LL_GPIO_MODE_ALTERNATE);
+	LL_GPIO_SetPinMode(GPIOA, LL_GPIO_PIN_6, LL_GPIO_MODE_FLOATING);
 	/*Configuration de la deuxième entrée*/
-	LL_GPIO_SetPinMode(GPIOA, LL_GPIO_PIN_7, LL_GPIO_MODE_ALTERNATE);
+	LL_GPIO_SetPinMode(GPIOA, LL_GPIO_PIN_7, LL_GPIO_MODE_FLOATING);
 	/*Index*/
-	LL_GPIO_SetPinMode(GPIOA, LL_GPIO_PIN_5, LL_GPIO_MODE_ALTERNATE);
+	LL_GPIO_SetPinMode(GPIOA, LL_GPIO_PIN_5, LL_GPIO_MODE_FLOATING);
+
+	LL_TIM_SetAutoReload (TIMx, 4*360);
+	LL_TIM_EnableARRPreload (TIMx);
+
 	
 }
 
@@ -51,36 +54,19 @@ void EXTI9_5_IRQnHandler(){
 		
 		/*LL_EXTI_ClearFlag_0_31 (LL_EXTI_LINE_5);*/
 		
-	if((LL_GPIO_IsInputPinSet(GPIOA, LL_GPIO_PIN_5)) == 1){
-		
-			LL_TIM_SetCounter(TIM3, 0);
-	}
+		LL_TIM_SetCounter(TIM3, 0);
+
 	
 		
 }
 
 float girouette_get_angle(){
+	
 	//TIMx est choisi en TIM3 voir variable global au début du code. 
-	
+	float angle;
 	int cnt = LL_TIM_GetCounter (TIMx);
-	float angle = 360.*cnt/(4.*360.);
-	
-
-	
-	LL_TIM_EnableARRPreload (TIMx);
-	LL_TIM_SetAutoReload (TIMx, 4*360);
-	
-
-	
-	/*if(LL_EXTI_IsActiveFlag_0_31 (LL_EXTI_LINE_5)==1){ // EXTI->PR)==(1<<5) : Si ce bit est pendant cela veut dire qu'on a vu l'impulsion est donc le compteur est mis à 0.
-		
-		void EXTI9_5_IRQnHandler(void);
-	
-		
-	}*/
-	
-	//EXTI9_5_IRQnHandler();
-	
+	angle = cnt/(4.);
 	return angle;
+
 		
 	}
