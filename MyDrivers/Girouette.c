@@ -57,6 +57,7 @@ void girouetteConf(){
 
 
 //Fonction handler pour garder en ligne de mire le comportement du channel index et donc remettre le CNT à zéro lors du passage au zéro absolu de la girouette.
+
 void EXTI9_5_IRQnHandler(){
 		
 		/*LL_EXTI_ClearFlag_0_31 (LL_EXTI_LINE_5);*/
